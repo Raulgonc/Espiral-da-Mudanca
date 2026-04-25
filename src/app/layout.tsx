@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
+import { LanguageProvider } from "@/lib/context/LanguageContext";
 import "./globals.css";
 
 const syne = Syne({
@@ -29,7 +30,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${syne.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+          <LanguageProvider>{children}</LanguageProvider>
+        </body>
     </html>
   );
 }
