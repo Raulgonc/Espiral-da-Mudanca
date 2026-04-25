@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 import { LanguageProvider } from "@/lib/context/LanguageContext";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["700", "800"],
+  weight: ["600", "700", "800"],
 });
 
 const dmSans = DM_Sans({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${syne.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${plusJakarta.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
           <LanguageProvider>{children}</LanguageProvider>
