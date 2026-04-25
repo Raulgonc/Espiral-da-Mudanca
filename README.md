@@ -26,7 +26,7 @@ Site single-page bilíngue (PT-BR / EN) com navegação por âncoras, toggle de 
 
 - **Nome:** Espiral da Mudança
 - **Posicionamento:** Consultoria de gestão de mudanças moderna, orientada por tecnologia
-- **Logo:** Espiral animada com gradiente teal + indigo (CSS conic-gradient)
+- **Logo:** Espiral com círculos em amarelo e âmbar — arquivo pendente (a ser fornecido pelo cliente)
 - **Tipografia:**
   - Headings: `Syne` (700–800)
   - Body: `DM Sans` (300–400)
@@ -35,12 +35,14 @@ Site single-page bilíngue (PT-BR / EN) com navegação por âncoras, toggle de 
 
 | Token | Hex | Uso |
 |---|---|---|
-| Accent Primary | `#00C4A1` | Teal — destaques, CTAs |
-| Accent Secondary | `#5B6FFF` | Indigo — gradientes, hover |
-| Dark BG | `#0D1117` | Fundo de seções escuras |
-| Body Text | `#111827` | Texto principal |
-| Muted | `#6B7280` | Texto secundário |
-| Light Surface | `#F8F9FB` | Fundo de seções claras |
+| `--brand-yellow` | `#F5C800` | Accent primário — CTAs, destaques |
+| `--brand-amber` | `#D97706` | Accent secundário — hover, gradientes |
+| `--brand-gold` | `#E6A800` | Tom intermediário |
+| `--brand-dark` | `#0A0A0A` | Fundo escuro / bordas |
+| `--brand-gray` | `#E8E8E8` | Surface clara |
+| `--brand-cream` | `#FFF8E7` | Fundo warm / gradiente |
+| `--brand-body` | `#1A1A1A` | Texto corpo |
+| `--brand-muted` | `#6B6B6B` | Texto secundário |
 
 ---
 
